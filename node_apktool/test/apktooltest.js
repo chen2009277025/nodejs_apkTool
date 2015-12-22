@@ -4,11 +4,13 @@
 var apktool = require("../index");
 var fs = require("fs");
 
+apktool.settings.apkToolPath = "/Users/chenjianhui/WebstormProjects/node_apktool/apkTool";
+
 //unpack apk
-//apktool.apkTool_unpack("/Users/chenjianhui/Documents/apkTest/Pet.apk","/Users/chenjianhui/Documents/apkTest",function(err,result){
-//        if(err){console.log("error:"+err);}
-//        console.log(result)
-//});
+apktool.apkTool_unpack("/Users/chenjianhui/Documents/apkTest/Pet.apk","/Users/chenjianhui/Documents/apkTest",function(err,result){
+        if(err){console.log("error:"+err);}
+        console.log(result)
+});
 
 
 /*
